@@ -28,7 +28,8 @@ public class NIM {
         char b = nim.charAt(1);
         char c = nim.charAt(2);
         String plus = "20";
-        return plus+b+c;
+        String tahun = plus+b+c;
+        return tahun;
     }
     public String getFakultas(){
         char d = nim.charAt(3);
