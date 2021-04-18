@@ -14,13 +14,13 @@ public class NIM {
     public String getJenjang(){
         char a = nim.charAt(0);
         if (a== '1'){
-            return "S1";
+            return "S1 (Sarjana)";
         }
         if (a== '2'){
-            return "S2";
+            return "S2 (Magister)";
         }
         if (a== '3'){
-            return "S3";
+            return "S3 (Doktor)";
         }
         return "UNKNOWN";
     }
