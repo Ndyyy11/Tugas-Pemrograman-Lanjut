@@ -31,7 +31,7 @@ public class NIM {
         String tahun = plus+b+c;
         return tahun;
     }
-    public String getFakultas(){
+    public String getFakultas() {
         char d = nim.charAt(3);
         if (d== '1'){
             return "TARBIYAH DAN KEGURUAN";
@@ -60,21 +60,21 @@ public class NIM {
         return "UNKNOWN";
     }
     public String getJurusan(){
-        char e = nim.charAt(4);
+        char n = nim.charAt(4);
         char f = nim.charAt(5);
-        if (e== '0' && f=='1'){
+        if (n== '0' && f=='1'){
             return "Teknik Informatika";
         }
-        if (e== '0' && f=='2'){
+        if (n== '0' && f=='2'){
             return "Teknik Industri";
         }
-        if (e== '0' && f=='3'){
+        if (n== '0' && f=='3'){
             return "Sistem Informasi ";
         }
-        if (e== '0' && f=='4'){
+        if (n== '0' && f=='4'){
             return "Matematika";
         }
-        if (e== '0' && f=='5'){
+        if (n== '0' && f=='5'){
             return "Teknik Elektro";
         }
         return "UNKNOWN";
