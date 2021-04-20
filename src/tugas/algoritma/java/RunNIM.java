@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class RunNIM {
     public static void main(String[] args) {
-        System.out.println("Program Identifikasi NIM");
+        System.out.println("====================================");
+        System.out.println("===== Program Identifikasi NIM =====");
+        System.out.println("====================================");
         System.out.print("Masukan NIM : ");
         Scanner s = new Scanner(System.in);
         String nim = s.nextLine();
