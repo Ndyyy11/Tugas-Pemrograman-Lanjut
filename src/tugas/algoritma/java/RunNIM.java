@@ -4,14 +4,15 @@ import java.util.Scanner;
 
 public class RunNIM {
     public static void main(String[] args) {
-        System.out.println("====================================");
-        System.out.println("===== Program Identifikasi NIM =====");
-        System.out.println("====================================");
-        System.out.print("Masukan NIM : ");
+        System.out.println("===================================================");
+        System.out.println("===== Program Identifikasi NIM UIN SUSKA RIAU =====");
+        System.out.println("===================================================");
+        System.out.print("Masukan NIM Anda : ");
         Scanner s = new Scanner(System.in);
         String nim = s.nextLine();
         NIM objNim = new NIM();
         objNim.setNim(nim);
+        System.out.println("");
         System.out.println("Maka Dari NIM Yang Di Masukan Kami Mendapatkan Informasi Sebagai Berikut : ");
         System.out.println("Jenjang = "+objNim.getJenjang());
         System.out.println("Tahun Masuk = "+objNim.getTahunMasuk());
