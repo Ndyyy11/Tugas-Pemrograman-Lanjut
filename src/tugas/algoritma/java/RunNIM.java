@@ -4,11 +4,13 @@ import java.util.Scanner;
 
 public class RunNIM {
     public static void main(String[] args) {
+        System.out.print("Program Identifikasi NIM");
         System.out.print("Masukan NIM : ");
         Scanner s = new Scanner(System.in);
         String nim = s.nextLine();
         NIM objNim = new NIM();
         objNim.setNim(nim);
+        System.out.println("Maka Dari NIM Yang Di Masukan Kami Mendapatkan Informasi Sebagai Berikut : ");
         System.out.println("Jenjang = "+objNim.getJenjang());
         System.out.println("Tahun Masuk = "+objNim.getTahunMasuk());
         System.out.println("Fakultas = "+objNim.getFakultas());
