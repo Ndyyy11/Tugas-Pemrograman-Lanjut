@@ -23,19 +23,19 @@ public class FormShorting {
                 String input = InputField.getText();
                 int jumlah = Integer.parseInt(InJumlah.getText());
                 String[] stmp = input.split(",");
-                if (stmp.length > jumlah || stmp.length < jumlah){
-                    JOptionPane.showMessageDialog(MainPanel,
-                            "Jumlah Angka Tidak Sesuai Limit yang DiInput",
-                            "Warning",
-                            JOptionPane.WARNING_MESSAGE);
-                    return;
-                }
                 if (InJumlah.getText().length()>3){
                     JOptionPane.showMessageDialog(MainPanel,
                             "Data Terlalu Banyak\nMax Input : 999",
                             "Warning",
                             JOptionPane.WARNING_MESSAGE);
                 return;
+                }
+                if (stmp.length > jumlah || stmp.length < jumlah){
+                    JOptionPane.showMessageDialog(MainPanel,
+                            "Jumlah Angka Tidak Sesuai Limit yang DiInput",
+                            "Warning",
+                            JOptionPane.WARNING_MESSAGE);
+                    return;
                 }
                 if (!added) {
                     for (int i = 0; i < jumlah; i++) {
